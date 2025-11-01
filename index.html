@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Shooting Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas"></canvas>
+        <div id="controls-panel">
+            <button id="forward-btn" class="control-btn">Forward</button>
+            <button id="left-btn" class="control-btn">Left</button>
+            <button id="right-btn" class="control-btn">Right</button>
+            <button id="back-btn" class="control-btn">Back</button>
+            <button id="shoot-btn" class="control-btn">Shoot (Spacebar)</button>
+        </div>
+        <div id="info-panel">
+            <p>Use WASD or Arrow Keys to move, Spacebar to shoot</p>
+            <p id="score-display">Score: <span id="score">0</span></p>
+        </div>
+        <div id="good-job" class="good-job-message">Good job! 🏀</div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
+
